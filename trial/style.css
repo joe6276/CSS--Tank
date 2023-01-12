@@ -64,6 +64,7 @@ font-weight: bold;
 }
 .three{
     grid-area: three;
+    justify-self:center;
 }
 .three h1{
     font-size: 40px;
