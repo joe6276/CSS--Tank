@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    width: 98vw;
+    height: 98vh;  
+   justify-items: center;
+  align-items: center;
+  
+}
+.content{
+    width: 90%;
+    height: 70%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: repeat(2,1fr);
+    grid-template-areas: "one two" "three three";
+}
+.one{
+    grid-area: one;
+  margin: auto;
+  width: 60%;
+}
+
+.one h1{
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.one p {
+     font-size: 30px; 
+}
+.two{
+    grid-area: two;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+   
+}
+.two-img{
+
+}
+.two-one{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: hsl(300, 24%, 96%)  ;
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 30px;
+}
+.two-one img{
+    width: 25px;
+    height:25px
+}
+
+.two-two{
+    display: flex;
+    justify-content: center;
+      background-color: hsl(300, 24%, 96%)  ;
+    width: 60%;
+    margin-left: 55px;
+     padding: 10px;
+    border-radius: 10px;
+    gap: 30px
+}
+.two-two img{
+    width: 25px;
+    height:25px
+}
+
+.two-three{
+    display: flex;
+    justify-content: center;
+      background-color: hsl(300, 24%, 96%)  ;
+    width: 60%;
+     margin-left: 75px;
+      padding: 10px;
+    border-radius: 10px;
+    gap: 30px
+}
+.two-three img{
+    width: 25px;
+    height:25px
+}
+
+.three{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    grid-area:three;
+    justify-content: center;
+}
+.three p{
+    font-size: 25px;
+}
+.three-one, .three-two, .three-three{
+    padding:10px;
+    background-color: hsl(300, 43%, 22%);
+    color: white;
+    border-radius: 10px;
+   
+}
+
+.three-one{
+    width: 25%;
+}
+.three-two{
+     width: 25%;
+     margin-top: 15px;
+}
+.three-three{
+    width: 25%;
+    margin-top: 25px;
+}
+
+.top{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    gap:10px
+}
+.top img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
